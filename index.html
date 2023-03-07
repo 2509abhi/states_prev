@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(8, 1, 26);
+      margin: 40px 40%;
+    }
+
+    #body {
+      background-color: rgb(29, 15, 65);
+      border-radius: 10px;
+      width: 300px;
+      height: 630px;
+      padding: 0;
+    }
+
+    img {
+      width: 300px;
+    }
+
+    .image-2 {
+      display: none;
+    }
+
+    h1,
+    h3 {
+      color: #fff;
+      margin: 10px 20px;
+    }
+
+
+    p {
+      color: grey;
+      margin: 10px 20px;
+    }
+
+    s {
+      text-decoration-line: none;
+      color: purple;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media (min-width: 481px) {
+      body {
+        margin: 100px;
+        margin-left: 300px;
+      }
+
+      .image {
+        display: none;
+      }
+
+      #body {
+        background-color: rgb(29, 15, 65);
+        border-radius: 10px;
+        display: flex;
+        width: 400px;
+        height: 400px;
+        margin: 0;
+        text-align: left;
+      }
+      .cointainer{
+        padding: 30px;
+      }
+      .image-2 {
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .features {
+        display: flex;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="body">
+    <div class="img">
+      <img class="image" src="images/image-header-mobile.jpg" alt="mobile-img">
+    </div>
+    <div class="cointainer">
+      <h1>Get <s>insights</s> that help your business grow.</h1>
+
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.</p>
+      <div class="view features">
+        <div>
+          <h3>10k+</h3>
+          <p>companies</p>
+        </div>
+        <div>
+          <h3>314</h3>
+          <p>templates</p>
+        </div>
+        <div>
+          <h3>12m+</h3>
+          <p>queries</p>
+        </div>
+      </div>
+    </div>
+    <div class="img">
+      <img class="image-2" src="images/image-header-desktop.jpg" alt="mobile-img">
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Abhishek Bansal</a>.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
